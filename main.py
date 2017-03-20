@@ -12,8 +12,8 @@ for i in range(ITTERATIONS):
     v = next(two_numbers())
     gcdTest = gcd(v[0], v[0])
     if(gcdTest == 1):
-        print("{} and {} are CoPrime with a factor of {}"
+        print("{} \tand \t{} \tare CoPrime with a factor of {}"
               .format(v[0], v[1], gcdTest))
     else:
-        print("{} and {} are CoFactor with a factor of {}"
+        print("{} \tand \t{} \tare CoFactor with a factor of {}"
               .format(v[0], v[1], gcdTest))
