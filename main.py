@@ -41,4 +41,4 @@ elif(piError < 1):
     print("The calculated value of Pi is {:.6f},"
           "this is {:.6f} % below the correct value".format(calculatedPi, p))
 else:
-    print("Calculated Pi is exacly eaqual to Pi")  # GLHF
+    print("Calculated Pi is exacly eaqual to Pi")  # GLHF tusse!
