@@ -2,11 +2,12 @@ from math import gcd, sqrt, pi
 from statistics import mean
 import random
 
-UPPER_BOUND = 1000
-ITTERATIONS = 500
-RUN_NUMBER_OF_TIMES = 10
+UPPER_BOUND = 1000  # the upper bound of the random number generator
+ITTERATIONS = 500  # the number of itterations when calculating Pi
+RUN_NUMBER_OF_TIMES = 10  # the number of times the caluclation of Pi
 
 
+#
 def two_numbers():
     yield (random.randint(0, UPPER_BOUND), random.randint(0, UPPER_BOUND))
 
@@ -28,11 +29,11 @@ calculatedPi = mean(piray)
 piError = calculatedPi/pi
 
 if(piError > 1):
-    p = (piError-1)/100
+    p = (piError-1)*100
     print("The calculated value of Pi is {:.6f},"
           "this is {:.6f}% above the correct value".format(calculatedPi, p))
 elif(piError < 1):
-    p = (1-piError)/100
+    p = (1-piError)*100
     print("The calculated value of Pi is {:.6f},"
           "this is {:.6f}% below the correct value".format(calculatedPi, p))
 else:
